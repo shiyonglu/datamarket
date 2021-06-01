@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Datasets</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="header">
+            <ul>
+                <li><a href="https://www.datagoldcoin.com/">HOME</a></li>
+                <li><a href="index.html">BUY DATASETS</a></li>
+                <li><a class="active" href="sell.html">SELL DATASETS</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="statusBar" >
+                <button class="button" id="connectWallet">CONNECT TO YOUR WALLET</button>
+                <p class="alert" id="statusBar"></p>
+                <p id="showAccount" style="visibility: hidden"></p>
+                <p id="showBalance" style="visibility: hidden"></p>
+            </div>
+            <div class="selling">
+                <div class="functionBlock">
+                    <h3>Assign Dataset ID</h3>
+                    <label>Last Dataset ID</label>
+                    <input type="text" id="showLastDatasetID" readonly/>
+                    <input type="submit" id="assignDatasetID" value="write"/>
+                </div>
+                <div class="functionBlock">
+                    <h3>Insert Price</h3>
+                    <label>Dataset ID</label>
+                    <input type="text" id="price_datasetID" placeholder="uint256"/>
+                    <label>New Price</label>
+                    <input type="text" id="newPrice" placeholder="uint256"/></td>
+                    <input type="submit" id="insertprice" value="write"/>
+                </div>
+                <div class="functionBlock">
+                    <h3>Insert Metadata</h3>
+                    <label>Dataset ID</label>
+                    <input type="text" id="meta_datasetID" placeholder="uint256"/>
+                    <label>Key</label>
+                    <input type="text" id="meta_key" placeholder="string"/>
+                    <label>Value</label>
+                    <input type="text" id="meta_value" placeholder="string"/>
+                    <input type="submit" id="insertMetadata" value="write"/>
+                </div>
+                <div class="functionBlock">
+                    <h3> Assign Delegate</h3>
+                    <label>Dataset ID</label>
+                    <input type="text" id="delegate_datasetID" placeholder="uint256"/>
+                    <label>Delegate</label>
+                    <input type="text" id="delegate_address" placeholder="address"/>
+                    <input type="submit" id="assignDelegate" value="write"/>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+        <script src="sell.js"></script>
+    </body>
+</html>
