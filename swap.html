@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Datasets</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="header">
+            <ul>
+                <li><a href="https://www.datagoldcoin.com/">HOME</a></li>
+                <li><a href="index.html">BUY DATASETS</a></li>
+                <li><a href="sell.html">SELL DATASETS</a></li>
+                <li><a class="active" href="swap.html">SWAP COINS</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="statusBar" >
+                <button class="button" id="connectWallet">CONNECT TO YOUR WALLET</button>
+                <p class="alert" id="statusBar"></p>
+                <p id="showAccount" style="visibility: hidden"></p>
+                <p id="showBalance" style="visibility: hidden"></p>
+            </div>
+            <div class="selling">
+                <div class="functionBlock">
+                    <button type="button" class="collapsible">Swap DGC for DAT</button>
+                    <div class="coll_info">
+                        <label>DGC Amount</label>
+                        <input type="text" id="dgcAmt" placeholder="uint256"/>
+                        <input type="submit" id="swapDGCforDAT" value="write"/>
+                    </div>
+                </div>
+                <div class="functionBlock">
+                    <button type="button" class="collapsible">Swap DAT for DGC</button>
+                    <div class="coll_info">
+                        <label>DAT Amount</label>
+                        <input type="text" id="datAmt" placeholder="uint256"/>
+                        <input type="submit" id="swapDATforDGC" value="write"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+        <script src="swap.js"></script>
+    </body>
+</html>
