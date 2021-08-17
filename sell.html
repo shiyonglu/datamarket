@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Datasets</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="header">
+            <ul>
+                <li><a href="https://www.datagoldcoin.com/">HOME</a></li>
+                <li><a href="index.html">BUY DATASETS</a></li>
+                <li><a class="active" href="sell.html">SELL DATASETS</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="statusBar" >
+                <button class="button" id="connectWallet">CONNECT TO YOUR WALLET</button>
+                <p class="alert" id="statusBar"></p>
+                <p id="showAccount" style="visibility: hidden"></p>
+                <p id="showBalance" style="visibility: hidden"></p>
+            </div>
+            <div class="selling">
+                <div class="functionBlock">
+                    <button type="button" class="collapsible">Query my Datasets</button>
+                    <div class="coll_info">
+                        <div id ="loader" style="display: none;">
+                            <div class="loader1"></div>
+                        </div>
+                        <div id="datasetInfo" style="display: none;" class="queryDatasetInfo"> 
+                            <ul id="datasetList">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="functionBlock">
+                    <button type="button" class="collapsible">Insert Account Profile</button>
+                    <div class="coll_info">
+                        <label>First Name</label>
+                        <input type="text" id="firstname" placeholder="string"/>
+                        <label>Last Name</label>
+                        <input type="text" id="lastname" placeholder="string"/>
+                        <label>Organization</label>
+                        <input type="text" id="organization" placeholder="string"/>
+                        <label>Street1</label>
+                        <input type="text" id="street1" placeholder="string"/>
+                        <label>Street2</label>
+                        <input type="text" id="street2" placeholder="string"/>
+                        <label>City</label>
+                        <input type="text" id="city" placeholder="string"/>
+                        <label>State</label>
+                        <input type="text" id="state" placeholder="string"/>
+                        <label>Province</label>
+                        <input type="text" id="province" placeholder="string"/>
+                        <label>Zip</label>
+                        <input type="text" id="zip" placeholder="string"/>
+                        <label>Country</label>
+                        <input type="text" id="country" placeholder="string"/>
+                        <label>Email</label>
+                        <input type="text" id="email" placeholder="string"/>
+                        <label>Phone</label>
+                        <input type="text" id="phone" placeholder="string"/>
+                        <label>Fax</label>
+                        <input type="text" id="fax" placeholder="string"/>
+                        <label>Website</label>
+                        <input type="text" id="website" placeholder="string"/>
+                        <input type="submit" id="insertAccountProfile" value="write"/>
+                    </div>
+                </div>
+                <div class="functionBlock">
+                    <button type="button" class="collapsible">Register Dataset Profile</button>
+                    <div class="coll_info">
+                        <label>Contributor</label>
+                        <input type="text" id="contributor" placeholder="string"/>
+                        <label>Coverage</label>
+                        <input type="text" id="coverage" placeholder="string"/>
+                        <label>Creator</label>
+                        <input type="text" id="creator" placeholder="string"/>
+                        <label>Date</label>
+                        <input type="text" id="date" placeholder="string"/>
+                        <label>Description</label>
+                        <input type="text" id="description" placeholder="string"/>
+                        <label>Format</label>
+                        <input type="text" id="format" placeholder="string"/>
+                        <label>Identifier</label>
+                        <input type="text" id="identifier" placeholder="string"/>
+                        <label>Language</label>
+                        <input type="text" id="language" placeholder="string"/>
+                        <label>Publisher</label>
+                        <input type="text" id="publisher" placeholder="string"/>
+                        <label>Relation</label>
+                        <input type="text" id="relation" placeholder="string"/>
+                        <label>Rights</label>
+                        <input type="text" id="rights" placeholder="string"/>
+                        <label>Source</label>
+                        <input type="text" id="source" placeholder="string"/>
+                        <label>Subject</label>
+                        <input type="text" id="subject" placeholder="string"/>
+                        <label>Title</label>
+                        <input type="text" id="title" placeholder="string"/>
+                        <label>Dtype</label>
+                        <input type="text" id="dtype" placeholder="string"/>
+                        <input type="submit" id="registerDatasetProfile" value="write"/>
+                    </div>
+                </div>
+                <div class="functionBlock">
+                    <button type="button" class="collapsible">List for Sale</button>
+                    <div class="coll_info">
+                        <label>Dataset ID</label>
+                        <input type="text" id="price_datasetID" placeholder="uint256"/>
+                        <label>Price (DGC)</label>
+                        <input type="text" id="newPrice" placeholder="uint256"/></td>
+                        <input type="submit" id="listForSale" value="write"/>
+                    </div>
+                </div>
+                <div class="functionBlock">
+                    <button type="button" class="collapsible">Unlist from Sale</button>
+                    <div class="coll_info">
+                        <label>Listing ID</label>
+                        <input type="text" id="unlist_listingID" placeholder="uint256"/>
+                        <input type="submit" id="unlistFromSale" value="write"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+        <script src="sell.js"></script>
+    </body>
+</html>
