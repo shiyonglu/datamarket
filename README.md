@@ -9,7 +9,6 @@ pip install simple_http_server
 http-server path/datamarket
 
 ### open localhost in browser
-Starting up http-server, serving ./public
-Available on:
+starting up http-server, available on:
   http://127.0.0.1:8081
   http://192.168.1.7:8081
