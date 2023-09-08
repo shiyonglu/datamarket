@@ -17,5 +17,6 @@ starting up http-server, available on:
 2. A demo website： http://datamarket.ppswap.org （or https://main.d2hqybuc0iit28.amplifyapp.com/)
 3. Code：  https://github.com/shiyonglu/datamarket
 4. Explanation of the code: https://rumble.com/vgw4v5-ep21-an-explanation-of-the-datagold-smart-contract.html
-5. Smart contract (Kovan) 0xAaD5dC6860deC75BA775837f83d533782aF72E0c
+5. Smart contract deployed on Polygon: https://polygonscan.com/token/0xc9e5de3cf795c8b4ac84ba09c99ba1fd6c9e9c34?a=0x06ce26b93e60b8e2c5fc07331b7e92532ac9125f#code
+   
   
