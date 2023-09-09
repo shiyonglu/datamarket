@@ -4,14 +4,13 @@
 pip install simple_http_server
 
 ### download datamarket and locate the path
+cd path/datamarket-main
 
 ### run localhost
-http-server path/datamarket
+python -m http.server 8080
 
 ### open localhost in browser
-starting up http-server, available on:
-  http://127.0.0.1:8081
-  http://192.168.1.7:8081
+starting up http-server, available on: localhost:8080
 
 ### Documentation
 1. A demo video：https://rumble.com/vksv6x-ep56-a-demo-of-the-ppswap-data-market-project.html
